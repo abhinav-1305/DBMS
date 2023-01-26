@@ -61,3 +61,5 @@ select branch_name,(assets/100000) as assets_in_lakhs from branch;
 select customer_name from Depositer,bankaccount where Depositer.accno=bankaccount.accno and branch_name='SBI_ResidencyRoad' having count(branch_name>=2);
 
 create view branch_loan_details as select branch_name,amount from loan;
+
+use database;
